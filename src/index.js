@@ -5,11 +5,11 @@ wallet.registerRpcMessageHandler(async (originString, requestObject) => {
         method: 'snap_confirm',
         params: [
           {
-            prompt: `Hello, ${originString}!`,
+            prompt: `Gas Fees`,
             description:
-              'This custom confirmation is just for display purposes.',
+              'Current Gas Fees from ETHGasStation.info:',
             textAreaContent:
-              'But you can edit the snap source code to make it do something, if you want to!',
+              'TO DO TO DO TO DO',
           },
         ],
       });

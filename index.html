@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
   </head>
-    <title>Hello, Snaps!</title>
+    <title>Gas Fee Snap</title>
     <link rel="icon" type="image/svg" href="./images/icon.svg"/>
   </head>
 
   <body>
-    <h1>Hello, Snaps!</h1>
+    <h1>Gas Fee Snap</h1>
     <details>
       <summary>Instructions</summary>
       <ul>
@@ -24,15 +24,15 @@
     </details>
     <br/>
 
-    <button class="connect">Connect</button>
-    <button class="sendHello">Send Hello</button>
+    <button id="connect">Connect</button>
+    <button id="getFees">Get Fees</button>
   </body>
 
   <script>
     const snapId = `local:${window.location.href}`;
 
-    const connectButton = document.querySelector('button.connect')
-    const sendButton = document.querySelector('button.sendHello')
+    const connectButton = document.getElementById('connect');
+    const sendButton = document.getElementById('getFees')
 
     connectButton.addEventListener('click', connect)
     sendButton.addEventListener('click', send)
@@ -47,13 +47,13 @@
       })
     }
 
-    // here we call the snap's "hello" method
+    // here we call the snap's "getFees" method
     async function send () {
       try {
         const response = await ethereum.request({
           method: 'wallet_invokeSnap',
           params: [snapId, {
-            method: 'hello'
+            method: 'getFees'
           }]
         })
       } catch (err) {
