@@ -1,10 +1,10 @@
 {
-  "name": "@metamask/template-snap",
-  "version": "0.7.0",
-  "description": "The 'Hello, world!' of MetaMask Snaps.",
+  "name": "@montoya/gas-fee-snap",
+  "version": "0.0.1",
+  "description": "An example Snap that fetches current ETH gas fees and displays them.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/snap-template.git"
+    "url": "https://github.com/Montoya/gas-fee-snap.git"
   },
   "license": "MIT",
   "main": "src/index.js",
