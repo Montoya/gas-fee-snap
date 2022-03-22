@@ -1,23 +1,24 @@
 {
-  "version": "0.7.0",
-  "proposedName": "MetaMask Template Snap",
-  "description": "A MetaMask Snap template.",
+  "version": "0.0.1",
+  "proposedName": "Gas Fee Snap",
+  "description": "An example Snap that displays estimated gas fees for Ethereum.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/snap-template.git"
+    "url": "https://github.com/Montoya/gas-fee-snap.git"
   },
   "source": {
-    "shasum": "ugRI+2ippw2w2gNSGWpvCRu5L1LD2j4FWQ+KcO/1dIE=",
+    "shasum": "WPVeNajrlSH+1Kdh5dhRP6JtKtCohjvJx00e4TKRs/w=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
         "iconPath": "images/icon.svg",
-        "packageName": "@metamask/template-snap",
+        "packageName": "@montoya/gas-fee-snap",
         "registry": "https://registry.npmjs.org/"
       }
     }
   },
   "initialPermissions": {
+    "endowment:network-access": {},
     "snap_confirm": {}
   },
   "manifestVersion": "0.1"

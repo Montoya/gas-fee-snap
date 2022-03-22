@@ -25,14 +25,14 @@
     <br/>
 
     <button id="connect">Connect</button>
-    <button id="getFees">Get Fees</button>
+    <button id="fees">Get Fees</button>
   </body>
 
   <script>
     const snapId = `local:${window.location.href}`;
 
-    const connectButton = document.getElementById('connect');
-    const sendButton = document.getElementById('getFees')
+    const connectButton = document.getElementById('connect')
+    const sendButton = document.getElementById('fees')
 
     connectButton.addEventListener('click', connect)
     sendButton.addEventListener('click', send)
@@ -53,7 +53,7 @@
         const response = await ethereum.request({
           method: 'wallet_invokeSnap',
           params: [snapId, {
-            method: 'getFees'
+            method: 'fees'
           }]
         })
       } catch (err) {
