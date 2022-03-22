@@ -1,7 +1,7 @@
-var getFees = async function() { 
+async function getFees() {
   let response = await fetch('https://www.etherchain.org/api/gasPriceOracle');
-  return response.text(); 
-}; 
+  return response.text();
+} 
 
 wallet.registerRpcMessageHandler(async (originString, requestObject) => {
   switch (requestObject.method) {
