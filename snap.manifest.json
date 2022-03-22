@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.7.1",
   "proposedName": "Gas Fee Snap",
   "description": "An example Snap that displays estimated gas fees for Ethereum.",
   "repository": {
