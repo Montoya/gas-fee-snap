@@ -66,6 +66,38 @@ textAreaContent:
    'Current fee estimates: '+fees
 ```
 
+### Building and testing your Snap
+
+From the command line, run the following commands to build and test your Snap: 
+
+```Shell
+yarn install
+
+yarn build:clean
+
+yarn run serve
+```
+
+After the last command, you should get a message like the following: 
+
+```Shell
+yarn run v1.22.15
+$ mm-snap serve
+
+Starting server...
+Server listening on: http://localhost:8081
+```
+
+Now, open Google Chrome and navigate to localhost:8080. You will see a page like the following: 
+
+![Test Dapp page](tutorial-assets/tutorial-test-dapp.png)
+
+This is a boilerplate test Dapp for installing and testing your Snap. Click "Connect" to connect Flask to the Dapp. After connecting, you will be prompted to install the Snap with two permissions, "Display a confirmation" and "Access the Internet." Click "Approve &amp; Install", then click the "Send Hello" button. You should see a confirmation window like the following: 
+
+![Test confirmation window](tutorial-assets/tutorial-confirmation-1.png)
+
+Congratulations! You just integrated a public API into MetaMask and displayed real-time gas fee estimates. 
+
 ## Helpful Resources 
 
 * [MetaMask Snaps Documentation](https://docs.metamask.io/guide/snaps.html)
