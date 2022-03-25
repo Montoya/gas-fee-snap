@@ -85,7 +85,7 @@ yarn run v1.22.15
 $ mm-snap serve
 
 Starting server...
-Server listening on: http://localhost:8081
+Server listening on: http://localhost:8080
 ```
 
 Now, open Google Chrome and navigate to localhost:8080. You will see a page like the following: 
@@ -132,14 +132,16 @@ You can update the fields in `snap.manifest.json` to match your custom Snap:
 * repository: the `url` should match your GitHub repo where you cloned the template
 * source: the `shasum` is set automatically when you build from the command line. the location should be based on where it is published on NPM if you decide to publish. 
 
-Likewise, you can update the name, version, description, and repository sections of `package.json` to match. 
+Likewise, you should update the name, version, description, and repository sections of `package.json` to match. 
 
-Lastly, you can update the content of `index.html`, such as changing the name of the method for showing gas fee estimates, but make sure to change the method name in `src/index.js` as well to match. 
+Lastly, you can update the content of `index.html`, such as changing the name of the method for showing gas fee estimates, but make sure to change the method name in `src/index.js` as well to match. In this repository, the method name has been changed to `fees` and the content of index.html has been changed so that the button to invoke it is appropriately labeled "Get Fees." 
 
-Once you have made all these changes you can publish your Snap to NPM and make the Dapp public so that others can install your custom Snap in MetaMask Flask. 
+Once you have made all these changes you can publish your Snap to NPM and make the Dapp public so that others can install your custom Snap in MetaMask Flask!
 
 ## Helpful Resources 
 
 * [MetaMask Snaps Documentation](https://docs.metamask.io/guide/snaps.html)
 * [Filecoin FilSnap by Chainsafe](https://github.com/ChainSafe/filsnap)
 * [A curated list of awesome MetaMask Snaps related resources](https://github.com/piotr-roslaniec/awesome-metamask-snaps)
+
+Building a Snap? Want to learn more? Join the [discussion board](https://github.com/MetaMask/snaps-skunkworks/discussions) and let us know!
