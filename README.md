@@ -98,6 +98,46 @@ This is a boilerplate test Dapp for installing and testing your Snap. Click "Con
 
 Congratulations! You just integrated a public API into MetaMask and displayed real-time gas fee estimates. 
 
+## Next Steps
+
+With a little bit of cleanup, you can format the gas fee estimates in the confirmation window: 
+
+```JavaScript
+const fees = JSON.parse(await getFees());
+const baseFee = parseFloat(fees.currentBaseFee); 
+const safeLow = Math.ceil(baseFee + parseFloat(fees.safeLow)); 
+const standard = Math.ceil(baseFee + parseFloat(fees.standard)); 
+const fastest = Math.ceil(baseFee + parseFloat(fees.fastest)); 
+return wallet.request({
+   method: 'snap_confirm',
+   params: [
+      {
+      prompt: `Gas Fees`,
+      description:
+         'Current Gas Fees from etherchain.org:',
+      textAreaContent:
+         'Low: '+safeLow+"\n"+
+         'Average: '+standard+"\n"+
+         'High: '+fastest
+      },
+   ],
+});
+```
+
+You can update the fields in `snap.manifest.json` to match your custom Snap: 
+
+* version: bump or set to `1.0.0` if you are ready to publish
+* proposedName: I used Gas Fee Snap but you can use whatever you prefer
+* description: up to you
+* repository: the `url` should match your GitHub repo where you cloned the template
+* source: the `shasum` is set automatically when you build from the command line. the location should be based on where it is published on NPM if you decide to publish. 
+
+Likewise, you can update the name, version, description, and repository sections of `package.json` to match. 
+
+Lastly, you can update the content of `index.html`, such as changing the name of the method for showing gas fee estimates, but make sure to change the method name in `src/index.js` as well to match. 
+
+Once you have made all these changes you can publish your Snap to NPM and make the Dapp public so that others can install your custom Snap in MetaMask Flask. 
+
 ## Helpful Resources 
 
 * [MetaMask Snaps Documentation](https://docs.metamask.io/guide/snaps.html)
