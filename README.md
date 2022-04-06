@@ -73,7 +73,7 @@ From the command line, run the following commands to build and test your Snap:
 ```Shell
 yarn install
 
-yarn build:clean
+yarn build
 
 yarn run serve
 ```
