@@ -68,6 +68,8 @@ textAreaContent:
 
 ### Building and testing your Snap
 
+Open `package.json` and bump the version (if `0.7.0`, bump it to `0.7.1`). 
+
 From the command line, run the following commands to build and test your Snap: 
 
 ```Shell
@@ -126,13 +128,12 @@ return wallet.request({
 
 You can update the fields in `snap.manifest.json` to match your custom Snap: 
 
-* version: bump or set to `1.0.0` if you are ready to publish
 * proposedName: I used Gas Fee Snap but you can use whatever you prefer
 * description: up to you
 * repository: the `url` should match your GitHub repo where you cloned the template
 * source: the `shasum` is set automatically when you build from the command line. the location should be based on where it is published on NPM if you decide to publish. 
 
-Likewise, you should update the name, version, description, and repository sections of `package.json` to match. 
+Likewise, you should update the name, version, description, and repository sections of `package.json` even if you do not plan to publish your Snap to NPM. _Note: the `version` field in `snap.manifest.json` inherits the `version` field from `package.json`._
 
 Lastly, you can update the content of `index.html`, such as changing the name of the method for showing gas fee estimates, but make sure to change the method name in `src/index.js` as well to match. In this repository, the method name has been changed to `fees` and the content of index.html has been changed so that the button to invoke it is appropriately labeled "Get Fees." 
 
