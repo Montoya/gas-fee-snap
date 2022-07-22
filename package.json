@@ -1,6 +1,6 @@
 {
   "name": "@montoya/gas-fee-snap",
-  "version": "0.0.1",
+  "version": "0.7.1",
   "description": "An example Snap that fetches current ETH gas fees and displays them.",
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
     "@metamask/eslint-config": "^8.0.0",
     "@metamask/eslint-config-jest": "^8.0.0",
     "@metamask/eslint-config-nodejs": "^8.0.0",
-    "@metamask/snaps-cli": "^0.9.0",
+    "@metamask/snaps-cli": "^0.18.1",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
@@ -47,6 +47,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "engines": {
-    "node": ">=12.11.0"
-  }
+    "node": ">=16.0.0"
+  },
+  "dependencies": {}
 }
