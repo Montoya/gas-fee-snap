@@ -3,8 +3,8 @@ async function getFees() {
   return response.text();
 } 
 
-wallet.registerRpcMessageHandler(async (originString, requestObject) => {
-  switch (requestObject.method) {
+module.exports.onRpcRequest = async ({ origin, request }) => {
+  switch (request.method) {
     case 'fees':
       // call ETH Gas Station API 
       const fees = JSON.parse(await getFees());
@@ -29,4 +29,4 @@ wallet.registerRpcMessageHandler(async (originString, requestObject) => {
     default:
       throw new Error('Method not found.');
   }
-});
+}; 
