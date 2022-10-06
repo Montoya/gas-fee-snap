@@ -117,11 +117,11 @@ After the last command, you should get a message that includes:
 
 Your default browser should open and navigate to this address, but if not, open Google Chrome or Firefox and navigate to localhost:3000. You will see a page like the following: 
 
-![Test Dapp](tutorial-assets/tutorial-test-dapp.png)
+<img src="tutorial-assets/tutorial-test-dapp.png" width="346" height="221" alt="Test Dapp">
 
 This is a boilerplate test Dapp for installing and testing your Snap. Click "Connect" to connect Flask to the Dapp. After connecting, you will be prompted to install the Snap with two permissions, "Display a confirmation" and "Access the Internet." Click "Approve &amp; Install", then click the "Send Hello" button. You should see a confirmation window like the following: 
 
-![Test Confirmation](tutorial-assets/tutorial-confirmation.png)
+<img src="tutorial-assets/tutorial-confirmation.png" alt="Test Confirmation" width="181" height="209">
 
 Congratulations! You just integrated a public API into MetaMask and displayed real-time gas fee estimates. 
 
