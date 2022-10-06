@@ -1,11 +1,11 @@
 {
   "name": "snap",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "The 'Hello, world!' of MetaMask Snaps, now written in TypeScript.",
+  "description": "An example snap for the 5-minute snap tutorial, now written in TypeScript.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/snap-template.git"
+    "url": "https://github.com/Montoya/gas-fee-snap.git"
   },
   "license": "(MIT-0 OR Apache-2.0)",
   "main": "src/index.ts",
