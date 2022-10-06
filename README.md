@@ -21,7 +21,7 @@ In this tutorial, you will learn how to use the Snap template and CLI tools, how
 
 First, navigate to the [@MetaMask/template-snap-monorepo](https://github.com/MetaMask/template-snap-monorepo) repository and click "Use this template."
 
-![Use this template](tutorial-assets/tutorial-use-template.png)
+<a href="https://github.com/MetaMask/template-snap-monorepo"><img alt="Use this template" src="tutorial-assets/tutorial-use-template.png" width="820" height="250"></a>
 
 Give your new Snap a name, like `gas-fee-snap`. Clone the respository to your local machine. Now you are ready to start modifying the files in your Snap.
 
