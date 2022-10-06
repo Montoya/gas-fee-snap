@@ -1,15 +1,12 @@
 {
-  "name": "@metamask/template-snap-monorepo",
-  "version": "0.1.0",
+  "name": "gas-fee-snap",
+  "version": "1.0.0",
   "private": true,
   "description": "",
-  "homepage": "https://github.com/MetaMask/template-snap-monorepo#readme",
-  "bugs": {
-    "url": "https://github.com/MetaMask/template-snap-monorepo/issues"
-  },
+  "homepage": "https://github.com/Montoya/gas-fee-snap-monorepo#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MetaMask/template-snap-monorepo.git"
+    "url": "git+https://github.com/Montoya/gas-fee-snap.git"
   },
   "license": "(MIT-0 OR Apache-2.0)",
   "author": "",
