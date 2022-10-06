@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0",
-  "description": "An example Snap written in TypeScript.",
-  "proposedName": "TypeScript Example Snap",
+  "version": "1.0.0",
+  "description": "An example Snap for the 5-minute snap tutorial.",
+  "proposedName": "Gas Fee Snap Tutorial",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/snap-template.git"
+    "url": "https://github.com/Montoya/gas-fee-snap"
   },
   "source": {
     "shasum": "Bg+tXKqOXFmhceaxSk0IVK/wcsZp8gVUKk3eCLReA/A=",
