@@ -27,17 +27,24 @@ export const getMessage = (originString: string): string =>
  */
 export const onRpcRequest: OnRpcRequestHandler = ({ origin, request }) => {
   switch (request.method) {
-    case 'hello':
+    case 'fees':
       return getFees().then(fees => {
+        const feesObject = JSON.parse(fees); 
+        const baseFee = parseFloat(feesObject.currentBaseFee); 
+        const safeLow = Math.ceil(baseFee + parseFloat(feesObject.safeLow)); 
+        const standard = Math.ceil(baseFee + parseFloat(feesObject.standard)); 
+        const fastest = Math.ceil(baseFee + parseFloat(feesObject.fastest)); 
         return wallet.request({
           method: 'snap_confirm', 
           params: [
             {
               prompt: getMessage(origin),
               description:
-                'This custom confirmation is just for display purposes.',
+                'Current gas fees from etherchain.org:',
               textAreaContent:
-                `Current fee estimates: ${fees}`,
+                `Low: ${safeLow}\n`+
+                `Average: ${standard}\n`+
+                `High: ${fastest}\n`
             }
           ]
         }); 

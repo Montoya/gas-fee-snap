@@ -4,14 +4,14 @@ import { MetamaskActions, MetaMaskContext } from '../hooks';
 import {
   connectSnap,
   getSnap,
-  sendHello,
+  getGas,
   shouldDisplayReconnectButton,
 } from '../utils';
 import {
   ConnectButton,
+  GetGasButton,
   InstallFlaskButton,
   ReconnectButton,
-  SendHelloButton,
 } from './Buttons';
 import { Card } from './Card';
 
@@ -117,9 +117,9 @@ export const Home = () => {
     }
   };
 
-  const handleSendHelloClick = async () => {
+  const handleGetGasClick = async () => {
     try {
-      await sendHello();
+      await getGas();
     } catch (e) {
       console.error(e);
       dispatch({ type: MetamaskActions.SetError, payload: e });
@@ -129,7 +129,7 @@ export const Home = () => {
   return (
     <Container>
       <Heading>
-        Welcome to <Span>template-snap</Span>
+        Welcome to <Span>gas-fee-snap</Span>
       </Heading>
       <Subtitle>
         Get started by editing <code>src/index.ts</code>
@@ -185,12 +185,12 @@ export const Home = () => {
         )}
         <Card
           content={{
-            title: 'Send Hello message',
+            title: 'Show Gas Fees',
             description:
-              'Display a custom message within a confirmation screen in MetaMask.',
+              'Display a custom message with current gas fees in MetaMask.',
             button: (
-              <SendHelloButton
-                onClick={handleSendHelloClick}
+              <GetGasButton
+                onClick={handleGetGasClick}
                 disabled={!state.installedSnap}
               />
             ),
