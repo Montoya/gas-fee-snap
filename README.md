@@ -17,7 +17,7 @@ Before you begin, make sure you have the following installed:
 
 ## The 5-Minute Snap Tutorial
 
-In this tutorial, you will learn how to use the snap template and CLI tools, how to add permissions to be requested at runtime, how to use the `fetch` API to request information from the Internet, and how to display custom information in a snap confirmation. The snap you will build is not meant to be an perfect way to show gas fee estimates but rather to demonstrate some features to get you started building with Snaps.
+In this tutorial, you will learn how to use the snap template and CLI tools, how to add permissions to be requested at runtime, how to use the `fetch` API to request information from the Internet, and how to display custom information in a snap confirmation. The snap you will build is not meant to be a perfect way to show gas fee estimates but rather to demonstrate some features to get you started building with Snaps.
 
 First, navigate to the [@MetaMask/template-snap-monorepo](https://github.com/MetaMask/template-snap-monorepo) repository and click "Use this template."
 
