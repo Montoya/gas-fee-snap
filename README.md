@@ -166,6 +166,6 @@ Once you have made all these changes you can publish your snap to NPM and make t
 
 ## Helpful Resources 
 
-* [MetaMask Snaps Getting Started Guide](https://github.com/MetaMask/snaps-skunkworks/discussions/675)
+[MetaMask Snaps Getting Started Guide](https://github.com/MetaMask/snaps-skunkworks/discussions/675)
 
 Building a Snap? Want to learn more? Join the [discussion board](https://github.com/MetaMask/snaps-skunkworks/discussions) and let us know!
