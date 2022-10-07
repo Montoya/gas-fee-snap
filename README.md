@@ -17,13 +17,13 @@ Before you begin, make sure you have the following installed:
 
 ## The 5-Minute Snap Tutorial
 
-In this tutorial, you will learn how to use the Snap template and CLI tools, how to add permissions to be requested at runtime, how to use the `fetch` API to request information from the Internet, and how to display custom information in a Snap Confirmation. The Snap you will implement is not meant to be an ideal way to show gas fee estimates but rather to demonstrate some features to get you started building with Snaps.
+In this tutorial, you will learn how to use the snap template and CLI tools, how to add permissions to be requested at runtime, how to use the `fetch` API to request information from the Internet, and how to display custom information in a snap confirmation. The snap you will build is not meant to be an perfect way to show gas fee estimates but rather to demonstrate some features to get you started building with Snaps.
 
 First, navigate to the [@MetaMask/template-snap-monorepo](https://github.com/MetaMask/template-snap-monorepo) repository and click "Use this template."
 
 <a href="https://github.com/MetaMask/template-snap-monorepo"><img alt="Use this template" src="tutorial-assets/tutorial-use-template.png" width="820" height="250"></a>
 
-Give your new Snap a name, like `gas-fee-snap`. Clone the respository to your local machine. Now you are ready to start modifying the files in your Snap.
+Give your new snap a name, like `gas-fee-snap`. Clone the respository to your local machine. Now you are ready to start modifying the files in your snap.
 
 ### Initialize your development environment with the required dependencies
 
@@ -162,7 +162,7 @@ Likewise, you should update the name, version, description, and repository secti
 
 Lastly, you can update the content of `/packages/site/src/components/Home.tsx`, such as changing the name of the method for showing gas fee estimates, but make sure to change the method name in `/packages/snap/src/index.tx` as well to match. In this repository, the method name has been changed to `fees` and the content of `Home.tsx` has been changed so that the button to invoke it is appropriately labeled "Show Gas Fees." 
 
-Once you have made all these changes you can publish your Snap to NPM and make the Dapp public so that others can install and try your custom Snap in MetaMask Flask!
+Once you have made all these changes you can publish your snap to NPM and make the Dapp public so that others can install and try your custom snap in MetaMask Flask!
 
 ## Helpful Resources 
 
