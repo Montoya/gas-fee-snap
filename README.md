@@ -115,7 +115,7 @@ After the last command, you should get a message that includes:
 [0] Local: http://localhost:3000
 ```
 
-Your default browser should open and navigate to this address, but if not, open Google Chrome or Firefox and navigate to localhost:3000. You will see a page like the following: 
+Your default browser should open and navigate to this address, but if not, open Google Chrome or Firefox (with MetaMask Flask installed) and navigate to `localhost:3000`. You will see a page like the following: 
 
 <img src="tutorial-assets/tutorial-test-dapp.png" width="346" height="221" alt="Test Dapp">
 
