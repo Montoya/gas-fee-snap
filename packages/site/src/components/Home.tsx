@@ -191,16 +191,12 @@ export const Home = () => {
             button: (
               <GetGasButton
                 onClick={handleGetGasClick}
-                disabled={!state.installedSnap}
+                disabled={!state.isFlask}
               />
             ),
           }}
-          disabled={!state.installedSnap}
-          fullWidth={
-            state.isFlask &&
-            Boolean(state.installedSnap) &&
-            !shouldDisplayReconnectButton(state.installedSnap)
-          }
+          disabled={!state.isFlask}
+          fullWidth={false}
         />
         <Notice>
           <p>
