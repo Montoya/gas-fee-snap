@@ -2379,6 +2379,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@metamask/providers@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "@metamask/providers@npm:10.0.0"
+  dependencies:
+    "@metamask/object-multiplex": ^1.1.0
+    "@metamask/safe-event-emitter": ^2.0.0
+    "@types/chrome": ^0.0.136
+    detect-browser: ^5.2.0
+    eth-rpc-errors: ^4.0.2
+    extension-port-stream: ^2.0.1
+    fast-deep-equal: ^2.0.1
+    is-stream: ^2.0.0
+    json-rpc-engine: ^6.1.0
+    json-rpc-middleware-stream: ^4.0.0
+    pump: ^3.0.0
+    webextension-polyfill-ts: ^0.25.0
+  checksum: 7b1908f8dee1ed7a73eb1f4bf9fe8344dfa948786d88c5fec6a4f3042cffede96a761267434d588a41e8b200e2ce243af857fe9fd22d456fcc64f883bf6c2e51
+  languageName: node
+  linkType: hard
+
 "@metamask/providers@npm:^9.0.0":
   version: 9.0.0
   resolution: "@metamask/providers@npm:9.0.0"
@@ -2406,14 +2426,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/snap-types@npm:^0.22.0":
-  version: 0.22.0
-  resolution: "@metamask/snap-types@npm:0.22.0"
+"@metamask/snap-types@npm:^0.22.0, @metamask/snap-types@npm:^0.22.2":
+  version: 0.22.2
+  resolution: "@metamask/snap-types@npm:0.22.2"
   dependencies:
     "@metamask/providers": ^9.0.0
-    "@metamask/snap-utils": ^0.22.0
+    "@metamask/snap-utils": ^0.22.2
     "@metamask/types": ^1.1.0
-  checksum: fdbc2c0ddcd4293b39f18152281e79eb0a30c08f45f0fe5c67650b4dd5f9f7317f2945d02ed6996e49868b0c8f10006fc3e670a24842af2cfc3d49e9237308b1
+  checksum: 3c4182b51e31059eaa6f46c94bdacb0543a190cca30e648c3d17411d6e56d10161948d1062a8811ee2ee058c9118f9ad4831bad787b7d24d8aff7466994d5b5d
   languageName: node
   linkType: hard
 
@@ -2432,6 +2452,26 @@ __metadata:
     ses: ^0.15.17
     superstruct: ^0.16.5
   checksum: d22fa227236989e67fb93ca28a820191af7b5e6d04af2dacf300f2fd8e718b5d02c387c633a8286767df53ee5d33eacb160e9c176874bbe1a5e2415ad64bdc08
+  languageName: node
+  linkType: hard
+
+"@metamask/snap-utils@npm:^0.22.2":
+  version: 0.22.2
+  resolution: "@metamask/snap-utils@npm:0.22.2"
+  dependencies:
+    "@babel/core": ^7.18.6
+    "@metamask/snap-types": ^0.22.2
+    "@metamask/utils": ^3.1.0
+    "@noble/hashes": ^1.1.3
+    "@scure/base": ^1.1.1
+    ajv: ^8.11.0
+    eth-rpc-errors: ^4.0.3
+    fast-deep-equal: ^3.1.3
+    rfdc: ^1.3.0
+    semver: ^7.3.7
+    ses: ^0.15.17
+    superstruct: ^0.16.5
+  checksum: 1cc2c7b346013f5592b1ffd20c239fd562c6cd7e8cd7818de14007ccc72f7732bc6e04f5aafed032167b48b33374b89b89d712422224aa2e365a63658dd3777f
   languageName: node
   linkType: hard
 
@@ -2493,6 +2533,13 @@ __metadata:
     fast-deep-equal: ^3.1.3
     superstruct: ^0.16.5
   checksum: 6d2c3dab762554d783b49411dd5e285457642d821bc81eee56d2d47af0923bdbc297b7970c71a45dfa870122d00e5613a51c7433ce604d6a1b64ee292d95df0d
+  languageName: node
+  linkType: hard
+
+"@noble/hashes@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "@noble/hashes@npm:1.1.3"
+  checksum: a6f9783d2a33fc528c8709532b1c26cc3f5866f79c66256e881b28c61a1585be3899b008aa4e5e2b4e01b95c713722f52591cbb18ec51aa0ec63e7eaece1b89c
   languageName: node
   linkType: hard
 
@@ -2672,6 +2719,13 @@ __metadata:
   version: 1.1.3
   resolution: "@rushstack/eslint-patch@npm:1.1.3"
   checksum: 53752d1e34e45a91b30a016b837c33054fcbd0a295c0312b0812dab78289ea680d7c0c3f19c1f885f49764d416727747133765ff5bfce31a9c4cc93c7a56ebe1
+  languageName: node
+  linkType: hard
+
+"@scure/base@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@scure/base@npm:1.1.1"
+  checksum: b4fc810b492693e7e8d0107313ac74c3646970c198bbe26d7332820886fa4f09441991023ec9aa3a2a51246b74409ab5ebae2e8ef148bbc253da79ac49130309
   languageName: node
   linkType: hard
 
@@ -9828,6 +9882,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json-rpc-middleware-stream@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "json-rpc-middleware-stream@npm:4.0.0"
+  dependencies:
+    "@metamask/safe-event-emitter": ^2.0.0
+    readable-stream: ^2.3.3
+  checksum: 7ef6dcf89ee821305d566866ee544cd6800c2da62c2f48f62ddf1b662836907c208b3d03908c19cae09ecdadc88f37156351c5bedb4df8515ad529f20fa97ba4
+  languageName: node
+  linkType: hard
+
 "json-schema-traverse@npm:^0.4.1":
   version: 0.4.1
   resolution: "json-schema-traverse@npm:0.4.1"
@@ -13509,7 +13573,7 @@ __metadata:
     "@metamask/eslint-config-jest": ^10.0.0
     "@metamask/eslint-config-nodejs": ^10.0.0
     "@metamask/eslint-config-typescript": ^10.0.0
-    "@metamask/providers": ^9.0.0
+    "@metamask/providers": ^10.0.0
     "@testing-library/dom": ^8.17.1
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^13.3.0
