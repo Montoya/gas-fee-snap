@@ -2305,9 +2305,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/auto-changelog@npm:^2.6.0":
-  version: 2.6.1
-  resolution: "@metamask/auto-changelog@npm:2.6.1"
+"@metamask/auto-changelog@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@metamask/auto-changelog@npm:3.0.0"
   dependencies:
     diff: ^5.0.0
     execa: ^5.1.1
@@ -2315,7 +2315,7 @@ __metadata:
     yargs: ^17.0.1
   bin:
     auto-changelog: dist/cli.js
-  checksum: 6ae84de492e4aec710ff2dd793f258b7cc3aba3fdeb416c0d3ab55a156da61b4ccd3272e9a6608f32b71695dc42b527a380ce62566e387240665556c8da26de3
+  checksum: ee6f41b466e8f0deb8bc454936513602c4767b7be94f704da3579e3100154c92779dcfde542076158138d5fcfb64ce491ab7fc30248ae097c7d903be0cad9fb4
   languageName: node
   linkType: hard
 
@@ -2376,6 +2376,26 @@ __metadata:
     once: ^1.4.0
     readable-stream: ^2.3.3
   checksum: 7c622639cc164c3b780294d790311e4bcb327faf14626717728022e95da5834f32fe4e242d8f4e7d9b8c2b83f0c76450922786b2f6ef50e777bfe119b78bdab7
+  languageName: node
+  linkType: hard
+
+"@metamask/providers@npm:^10.0.0":
+  version: 10.2.0
+  resolution: "@metamask/providers@npm:10.2.0"
+  dependencies:
+    "@metamask/object-multiplex": ^1.1.0
+    "@metamask/safe-event-emitter": ^2.0.0
+    "@types/chrome": ^0.0.136
+    detect-browser: ^5.2.0
+    eth-rpc-errors: ^4.0.2
+    extension-port-stream: ^2.0.1
+    fast-deep-equal: ^2.0.1
+    is-stream: ^2.0.0
+    json-rpc-engine: ^6.1.0
+    json-rpc-middleware-stream: ^4.2.0
+    pump: ^3.0.0
+    webextension-polyfill-ts: ^0.25.0
+  checksum: a20b637281ca1bfdb20fdf2886148fb40ffca4c6aa07194753ea92f5beb4f91961834440173c8ccfc3f1eb172d1dfb441c6825d1332bca5163007fabfaca3bcd
   languageName: node
   linkType: hard
 
@@ -9828,6 +9848,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json-rpc-middleware-stream@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "json-rpc-middleware-stream@npm:4.2.0"
+  dependencies:
+    "@metamask/safe-event-emitter": ^2.0.0
+    readable-stream: ^2.3.3
+  checksum: eccdac47843f2cf6bb0344d2e509791307c2f2e6358ac5b78a7a14c0a079deb0851ed41b68d6126b7ed413a7ff364bb6e98907dcd06f3cf4a032246865e41c59
+  languageName: node
+  linkType: hard
+
 "json-schema-traverse@npm:^0.4.1":
   version: 0.4.1
   resolution: "json-schema-traverse@npm:0.4.1"
@@ -13509,7 +13539,7 @@ __metadata:
     "@metamask/eslint-config-jest": ^10.0.0
     "@metamask/eslint-config-nodejs": ^10.0.0
     "@metamask/eslint-config-typescript": ^10.0.0
-    "@metamask/providers": ^9.0.0
+    "@metamask/providers": ^10.0.0
     "@testing-library/dom": ^8.17.1
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^13.3.0
@@ -13565,7 +13595,7 @@ __metadata:
   resolution: "snap@workspace:packages/snap"
   dependencies:
     "@lavamoat/allow-scripts": ^2.0.3
-    "@metamask/auto-changelog": ^2.6.0
+    "@metamask/auto-changelog": ^3.0.0
     "@metamask/eslint-config": ^10.0.0
     "@metamask/eslint-config-jest": ^10.0.0
     "@metamask/eslint-config-nodejs": ^10.0.0
