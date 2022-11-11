@@ -27,7 +27,7 @@ Give your new snap a name, like `gas-fee-snap`. Clone the respository to your lo
 
 ### Initialize your development environment with the required dependencies
 
-Open the main folder of your repository with a command line tool like `cmd` or `terminal`. Make sure you are using Node.js version 16 (if you installed nvm, type `nvm use` and hit enter to set the local version in this folder to 16) and yarn version 3. Then, type `yarn && yarn install` and hit enter. 
+Open the main folder of your repository with a command line tool like `cmd` or `terminal`. Make sure you are using Node.js version 16 (if you installed nvm, type `nvm use` and hit enter to set the local version in this folder to 16) and yarn version 3. Then, type `yarn` and hit enter. 
 
 Now you are ready to start modifying your snap!
 
