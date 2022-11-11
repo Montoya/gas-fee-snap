@@ -105,7 +105,7 @@ export const onRpcRequest: OnRpcRequestHandler = ({ origin, request }) => {
 
 Open `package.json` in the main directory of the repository and bump the version (if `0.1.0`, bump it to `0.2.0`). 
 
-From the command line, run the following commands to build and test your Snap: `yarn build && yarn start`. 
+From the command line, run the following commands to build and test your Snap: `yarn start`. 
 
 After the last command, you should get a message that includes: 
 
