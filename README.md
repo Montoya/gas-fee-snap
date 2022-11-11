@@ -45,7 +45,7 @@ Since this is a gas fee snap, why not use a gas pump as the icon? Open the `snap
    }
 ```
 
-Then, place [this file](https://raw.githubusercontent.com/Montoya/gas-fee-snap/main/packages/snap/gas.svg) into the `images` folder. This is a free icon, "Gas" by Mello from [Noun Project](https://thenounproject.com/browse/icons/term/gas/). 
+Then, place [this file](https://raw.githubusercontent.com/Montoya/gas-fee-snap/main/packages/snap/images/gas.svg) into the `images` folder. This is a free icon, "Gas" by Mello from [Noun Project](https://thenounproject.com/browse/icons/term/gas/). 
 
 ### Adding the Network Access Permission to your Snap
 
