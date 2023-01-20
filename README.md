@@ -68,8 +68,8 @@ Now that you have the network access permission, you can use the `fetch` API in 
 import { OnRpcRequestHandler } from '@metamask/snap-types';
 
 async function getFees() {
-  const response = await fetch('https://www.etherchain.org/api/gasPriceOracle'); 
-  return response.text(); 
+  const response = await fetch('https://beaconcha.in/api/v1/execution/gasnow'); 
+  return response.text();
 }
 
 /**
