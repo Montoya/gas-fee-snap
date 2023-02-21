@@ -130,31 +130,9 @@ Congratulations! You just integrated a public API into MetaMask and displayed re
 
 ## Next Steps
 
-With a little bit of cleanup, you can format the gas fee estimates in the confirmation window: 
+Next, you can try parsing the JSON response from the remote API and displaying the fees in a nicely formatted way. 
 
-```TypeScript
-const feesObject = JSON.parse(fees);
-const baseFee = parseFloat(feesObject.currentBaseFee); 
-const safeLow = Math.ceil(baseFee + parseFloat(feesObject.safeLow)); 
-const standard = Math.ceil(baseFee + parseFloat(feesObject.standard)); 
-const fastest = Math.ceil(baseFee + parseFloat(feesObject.fastest)); 
-return wallet.request({
-   method: 'snap_confirm',
-   params: [
-      {
-      prompt: getMessage(origin),
-      description:
-         'Current Gas Fees from etherchain.org:',
-      textAreaContent:
-         `Low: ${safeLow}\n`+
-         `Average: ${standard}\n`+
-         `High: ${fastest}\n`
-      },
-   ],
-});
-```
-
-You can update the fields in `snap.manifest.json` to match your custom Snap: 
+You can also update the fields in `snap.manifest.json` to match your custom Snap: 
 
 * proposedName: I used Gas Fee Snap but you can use whatever you prefer
 * description: up to you
