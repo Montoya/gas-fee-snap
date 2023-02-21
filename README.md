@@ -33,13 +33,13 @@ Now you are ready to start modifying your snap!
 
 ### Setting a custom icon for your snap
 
-Since this is a gas fee snap, why not use a gas pump as the icon? Open the `snap.manifest.json` file in `/packages/snap`. This file has the main configuration details for your snap. Edit the section under `npm` to change the `imagePath` to your new icon: 
+Since this is a gas fee snap, why not use a gas pump as the icon? Open the `snap.manifest.json` file in `/packages/snap`. This file has the main configuration details for your snap. Edit the section under `npm` to change the `iconPath` to your new icon: 
 
 ```json
 "location": {
    "npm": {
       "filePath": "dist/bundle.js",
-      "imagePath": "images/gas.svg",
+      "iconPath": "images/gas.svg",
       "packageName": "snap",
       "registry": "https://registry.npmjs.org/"
    }
@@ -53,19 +53,24 @@ Open `snap.manifest.json` again. To enable your Snap to use the `fetch` API, you
 
 ```JSON
 "initialPermissions": {
-  "snap_confirm": {}, 
+  "snap_dialog": {},
+  "endowment:rpc": {
+    "dapps": true,
+    "snaps": false
+  }, 
   "endowment:network-access": {}
 },
 ```
 
-*Don't forget to add the comma `,` after the first permission!*
+*Don't forget to add the comma `,` after the permission before it!*
 
 ### Fetching Gas Fee Estimates 
 
 Now that you have the network access permission, you can use the `fetch` API in your snap! Open `/packages/snap/src/index.ts`. This is the main code file for your Snap. To get a gas fee estimate, you will use the public API endpoint provided by etherchain.org. Add the following async function to the top of the file:  
 
 ```TypeScript
-import { OnRpcRequestHandler } from '@metamask/snap-types';
+import { OnRpcRequestHandler } from '@metamask/snaps-types';
+import { panel, text } from '@metamask/snaps-ui';
 
 async function getFees() {
   const response = await fetch('https://beaconcha.in/api/v1/execution/gasnow'); 
@@ -83,23 +88,21 @@ Since the `getFees()` function returns a promise, you will need to use `then()` 
 export const onRpcRequest: OnRpcRequestHandler = ({ origin, request }) => {
   switch (request.method) {
     case 'hello':
-      return getFees().then(fees => {
-        return wallet.request({
-          method: 'snap_confirm', 
-          params: [
-            {
-              prompt: getMessage(origin),
-              description:
-                'This custom confirmation is just for display purposes.',
-              textAreaContent:
-                `Current fee estimates: ${fees}`,
-            }
-          ]
+      return getFees().then(fees => { 
+        return snap.request({
+          method: 'snap_dialog', 
+          params: { 
+            type: 'Alert', 
+            content: panel([
+              text(`Hello, **${origin}**!`), 
+              text(`Current gas fee estimates: ${fees}`), 
+            ]), 
+          }
         }); 
-      }); 
+      });  
 ```
 
-*Note that the plain string under `textAreaContent` with single quotation marks ' has been converted to a template string with backticks \`.*
+*Note the use of backticks \`, this is a template string that allows variables to be embedded with \${...}.*
 
 ### Building and testing your Snap
 
