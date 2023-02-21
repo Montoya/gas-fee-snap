@@ -108,21 +108,21 @@ export const onRpcRequest: OnRpcRequestHandler = ({ origin, request }) => {
 
 Open `package.json` in the main directory of the repository and bump the version (if `0.1.0`, bump it to `0.2.0`). 
 
-From the command line, run the following commands to build and test your Snap: `yarn start`. 
+From the command line, run the following command to build and test your Snap: `yarn start`. 
 
 After the last command, you should get a message that includes: 
 
 ```Shell
-[0] You can now view site in the browser.
-[0] 
-[0] Local: http://localhost:3000
+You can now view site in the browser.
+
+  http://localhost:8000/
 ```
 
-Your default browser should open and navigate to this address, but if not, open Google Chrome or Firefox (with MetaMask Flask installed) and navigate to [localhost:3000](http://localhost:3000). You will see a page like the following: 
+Your default browser should open and navigate to this address, but if not, open Google Chrome or Firefox (with MetaMask Flask installed) and navigate to [localhost:8000](http://localhost:8000). You will see a page like the following: 
 
 <img src="tutorial-assets/tutorial-test-dapp.png" width="346" height="221" alt="Test Dapp">
 
-This is a boilerplate test Dapp for installing and testing your Snap. Click "Connect" to connect Flask to the Dapp. After connecting, you will be prompted to install the Snap with two permissions, "Display a confirmation" and "Access the Internet." Click "Approve &amp; Install", then click the "Send Hello" button. You should see a confirmation window like the following: 
+This is a boilerplate test Dapp for installing and testing your Snap. Click "Connect" to connect Flask to the Dapp. After connecting, you will be prompted to install the Snap with these permissions: "Display dialog windows in MetaMask," "Allow websites to communicate directly with this snap," and "Access the internet." Click "Approve &amp; install", then click the "Send Hello" button. You should see a dialog prompt with the response from the gas fee API: 
 
 <img src="tutorial-assets/tutorial-confirmation.png" alt="Test Confirmation" width="362" height="418">
 
