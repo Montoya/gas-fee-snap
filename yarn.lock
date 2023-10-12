@@ -2366,16 +2366,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/eslint-config-typescript@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "@metamask/eslint-config-typescript@npm:10.0.0"
+"@metamask/eslint-config-typescript@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "@metamask/eslint-config-typescript@npm:11.1.0"
   peerDependencies:
-    "@metamask/eslint-config": ^10.0.0
-    "@typescript-eslint/eslint-plugin": ^5.33.0
-    "@typescript-eslint/parser": ^5.33.0
-    eslint: ^8.21.0
-    typescript: ^4.0.7
-  checksum: a1593d8d11f3d476aba24c0aa5e829724dd9dce6539cb2b33b75d5a1623ae9950370920fb666504d5192aee17f88fcecdcaf76465e66d67ece7dcb3ad90efd9b
+    "@metamask/eslint-config": ^11.0.0
+    "@typescript-eslint/eslint-plugin": ^5.42.1
+    "@typescript-eslint/parser": ^5.42.1
+    eslint: ^8.27.0
+    typescript: ~4.8.4
+  checksum: 86f20303730fce7a2d6944d133e3d4cf745816bdc202fd17ebd341e4937777c662e80b3c1496a8da7d5e06e39518dec3206c4a4e872d9491f423e792bcdf56db
   languageName: node
   linkType: hard
 
@@ -7995,7 +7995,7 @@ __metadata:
     "@metamask/eslint-config": ^10.0.0
     "@metamask/eslint-config-jest": ^10.0.0
     "@metamask/eslint-config-nodejs": ^10.0.0
-    "@metamask/eslint-config-typescript": ^10.0.0
+    "@metamask/eslint-config-typescript": ^11.1.0
     "@typescript-eslint/eslint-plugin": ^5.33.0
     "@typescript-eslint/parser": ^5.33.0
     concurrently: ^7.3.0
@@ -13534,7 +13534,7 @@ __metadata:
     "@metamask/eslint-config": ^10.0.0
     "@metamask/eslint-config-jest": ^10.0.0
     "@metamask/eslint-config-nodejs": ^10.0.0
-    "@metamask/eslint-config-typescript": ^10.0.0
+    "@metamask/eslint-config-typescript": ^11.1.0
     "@metamask/providers": ^10.0.0
     "@testing-library/dom": ^8.17.1
     "@testing-library/jest-dom": ^5.16.4
@@ -13595,7 +13595,7 @@ __metadata:
     "@metamask/eslint-config": ^10.0.0
     "@metamask/eslint-config-jest": ^10.0.0
     "@metamask/eslint-config-nodejs": ^10.0.0
-    "@metamask/eslint-config-typescript": ^10.0.0
+    "@metamask/eslint-config-typescript": ^11.1.0
     "@metamask/snap-types": ^0.23.0
     "@metamask/snaps-cli": ^0.28.0
     "@typescript-eslint/eslint-plugin": ^5.33.0
